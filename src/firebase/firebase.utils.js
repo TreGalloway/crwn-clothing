@@ -18,11 +18,14 @@ const config = {
   measurementId: "G-XR5E7SRWX4"
 };
 
+
 const app = initializeApp(config);
 const db = getFirestore(app);
 
-export const {auth,userAuth} = getAuth(app);
+
+export const {auth,userAuth,} = getAuth(app);
 export const firestore = getFirestore(app);
+
 
 export const createAccount = createUserWithEmailAndPassword;
 const provider = new GoogleAuthProvider();
