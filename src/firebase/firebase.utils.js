@@ -32,7 +32,7 @@ provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () =>
   signInWithPopup(userAuth, provider).catch((error) => console.log(error));
 
-export const {auth,userAuth,} = getAuth(app);
+export const {auth,userAuth} = getAuth(app);
 export const firestore = getFirestore(app);
 
 
