@@ -15,3 +15,5 @@ const Directory = ({ sections }) => (
     ))}
   </div>
 );
+
+export default Directory;
