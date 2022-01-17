@@ -15,14 +15,12 @@ const config = {
   storageBucket: "crwn-db-7a3fd.appspot.com",
   messagingSenderId: "972792489554",
   appId: "1:972792489554:web:8f4fd65019ab83a906a18b",
-  measurementId: "G-XR5E7SRWX4"
+  measurementId: "G-XR5E7SRWX4",
 };
 //Initialize Firebase
 
 const app = initializeApp(config);
 const db = getFirestore(app);
-
-
 
 export const createAccount = createUserWithEmailAndPassword;
 const provider = new GoogleAuthProvider();
@@ -32,12 +30,10 @@ provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () =>
   signInWithPopup(userAuth, provider).catch((error) => console.log(error));
 
-export const {auth,userAuth} = getAuth(app);
+export const { auth, userAuth } = getAuth(app);
 export const firestore = getFirestore(app);
 
-
-
-  //Storing Data in Firebase
+//Storing Data in Firebase
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
