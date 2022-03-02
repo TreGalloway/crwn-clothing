@@ -9,8 +9,8 @@ import CollectionsOverviewContainer from '../../components/collections-overview/
 import CollectionPageContainer from '../../pages/collection/collection.container';
 
 
-const CollectionsOverviewWithSpinner = WithSpinner(CollectionsOverview);
-const CollectionPageWithSpinner = WithSpinner(CollectionPage);
+// const CollectionsOverviewWithSpinner = WithSpinner(CollectionsOverview);
+// const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
   componentDidMount() {
