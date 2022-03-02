@@ -28,4 +28,3 @@ export const SpinnerContainer = styled.div`
     }
   }
 `;
-s
