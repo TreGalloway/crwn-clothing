@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
-  Switch, Route, BrowserRouter, Redirect,
+  Switch, Route, Redirect,
 } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -14,7 +14,9 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 
 import { selectCurrentUser } from './redux/user/user.selectors';
-import {checkUserSession} from './redux/user/user.actions'
+import {checkUserSession} from './redux/user/user.actions';
+
+
 const App = () => {
   const dispatch = useDispatch();
   const currentUser = useSelector(selectCurrentUser);
